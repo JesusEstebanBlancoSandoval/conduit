@@ -1,5 +1,6 @@
 import { Entity, EntityRepositoryType, HiddenProps, ManyToMany, Opt, PrimaryKey, Property, Collection, wrap, EntityDTO } from "@mikro-orm/core";
 import { IsEmail } from 'class-validator';
+import { UserRepository } from "./user.Repository";
 //hace falta definir userrepository y articulo
 @Entity({ repository: () => UserRepository })
 export class User {
