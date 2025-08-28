@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { User } from "./user.entity";
 import { EntityManager, wrap } from "@mikro-orm/sqlite";
 import { UserRepository } from "./user.Repository";
-import { CreateUserDTO, loginUserDto, updateUserDto } from "src/dto";
+import { CreateUserDTO, loginUserDto, updateUserDto } from "src/user/dto";
 //importar manual bcrypt
 import { hash } from "bcrypt";
 import { UserResponse } from "./user.interface";
